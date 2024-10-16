@@ -15,9 +15,8 @@ build:
 
 requirements:
   build:
-    - {{ compiler("fortran") }}  # [unix]
-    - {{ compiler('m2w64_fortran') }}  # [win]
-    - {{ stdlib("c") }}    # [win]
+    - {{ stdlib("c") }}
+    - {{ compiler("fortran") }}
 
 test:
   commands:

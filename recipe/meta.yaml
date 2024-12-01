@@ -1,5 +1,5 @@
 {% set name = "leparagliding" %}
-{% set version = "3.20" %}
+{% set version = "3.23" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: http://www.laboratoridenvol.com/leparagliding/leparagliding{{ version }}.f.zip
-  sha256: 2810686eedc5273da237a81ec80a9178924cab437312688a6d033aa7fa887bc7
+  sha256: 81d4794df347a5de548f8c9a11a3a87ee5a585a5be72ba5f186d1b875698c024
 
 build:
   number: 1

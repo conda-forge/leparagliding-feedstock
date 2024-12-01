@@ -11,13 +11,12 @@ source:
   sha256: 81d4794df347a5de548f8c9a11a3a87ee5a585a5be72ba5f186d1b875698c024
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
     - {{ stdlib("c") }}
     - {{ compiler("fortran") }}
-    - {{ stdlib("c") }}
 
 test:
   commands:

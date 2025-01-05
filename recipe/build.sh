@@ -1,4 +1,4 @@
-if [[ ${target_platform} =~ osx-64 ]]; then
+if [[ ${target_platform} =~ osx-arm64 ]]; then
     export LIBRARY_PATH=${PREFIX}/lib:$LIBRARY_PATH
     export DYLD_LIBRARY_PATH=${PREFIX}/lib:$DYLD_LIBRARY_PATH
 fi

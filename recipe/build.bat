@@ -3,6 +3,6 @@ if defined FFLAGS (
 ) else (
     set FFLAGS=-std=legacy
 )
-%FC% leparagliding.f
+%FC% %FFLAGS% leparagliding.f
 mkdir %LIBRARY_PREFIX%\bin
 COPY a.exe %LIBRARY_PREFIX%\bin\leparagliding.exe

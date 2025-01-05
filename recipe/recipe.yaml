@@ -9,8 +9,6 @@ package:
 source:
   - url: http://www.laboratoridenvol.com/leparagliding/leparagliding${{ version }}.f.zip
     sha256: 81d4794df347a5de548f8c9a11a3a87ee5a585a5be72ba5f186d1b875698c024
-  - url: https://www.gnu.org/licenses/agpl-3.0.txt
-    sha256: 0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0
 
 build:
   number: 1

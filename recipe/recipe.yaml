@@ -1,5 +1,3 @@
-schema_version: 1
-
 context:
   name: leparagliding
   version: 3.23
@@ -42,4 +40,3 @@ about:
 extra:
   recipe-maintainers:
     - looooo
-

@@ -1,0 +1,43 @@
+schema_version: 1
+
+context:
+  name: leparagliding
+  version: 3.23
+
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  url: http://www.laboratoridenvol.com/leparagliding/leparagliding${{ version }}.f.zip
+  sha256: 81d4794df347a5de548f8c9a11a3a87ee5a585a5be72ba5f186d1b875698c024
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - ${{ stdlib("c") }}
+    - ${{ compiler("fortran") }}
+    - ${{ stdlib("c") }}
+
+tests:
+  - script:
+      - if: unix
+        then: test -f ${PREFIX}/bin/leparagliding
+      - if: win
+        then: test -f %LIBRARY_PREFIX%\bin\leparagliding.exe
+
+about:
+  license: GPL-3.0-or-later
+  license_file: ${{ RECIPE_DIR }}/LICENSE
+  summary: Advanced paragliding-design software written in fortran
+  description: Advanced paragliding-design software written in fortran
+  homepage: http://www.laboratoridenvol.com
+  repository: http://www.laboratoridenvol.com/leparagliding
+  documentation: http://www.laboratoridenvol.com/leparagliding
+
+extra:
+  recipe-maintainers:
+    - looooo
+

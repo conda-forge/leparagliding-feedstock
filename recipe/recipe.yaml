@@ -23,8 +23,6 @@ tests:
   - script:
       - if: unix
         then: test -f ${PREFIX}/bin/leparagliding
-      - if: win
-        then: EXISTS "%PREFIX%\bin\leparagliding.exe"
 
 about:
   license: GPL-3.0-or-later

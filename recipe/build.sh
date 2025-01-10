@@ -1,3 +1,3 @@
-${FC} leparagliding.f
+${FC} ${FFLAGS} leparagliding.f -o leparagliding
 mkdir -p ${PREFIX}/bin
-cp a.out ${PREFIX}/bin/leparagliding
+cp leparagliding ${PREFIX}/bin/

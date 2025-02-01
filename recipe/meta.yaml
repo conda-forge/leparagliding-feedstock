@@ -1,7 +1,6 @@
 {% set name = "leparagliding" %}
 {% set version = "3.20" %}
 
-
 package:
   name: {{ name }}
   version: {{ version }}
@@ -16,7 +15,11 @@ build:
 requirements:
   build:
     - {{ compiler("fortran") }}  # [unix]
+    - {{ compiler("c") }}  # [unix]
+    - {{ stdlib("c") }}  # [unix]
     - {{ compiler('m2w64_fortran') }}  # [win]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ stdlib('m2w64_c') }}  # [win]
 
 test:
   commands:
@@ -26,7 +29,6 @@ test:
 about:
   home: http://www.laboratoridenvol.com
   license: GPL-3.0-or-later
-  license_family: GPL
   license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: Advanced paragliding-design software written in fortran
   description: Advanced paragliding-design software written in fortran
